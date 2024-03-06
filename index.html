@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Bookmark</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="bookmark">
+      <h1 class="fw-bold py-5 mt-3">Bookmarker</h1>
+      <div class="bookmark-box text-center p-5 m-3">
+        <h2 class="fw-bold pb-3">Bookmark your favorite sites</h2>
+        <label for="siteNameInput" class="mb-3 mt-2 fw-bold">Site Name</label>
+        <input type="text" class="form-control mb-3 w-75 m-auto" id="siteNameInput" placeholder="Bookmark Name">
+        <h5 class="p-1 w-75 m-auto fw-bold alert alert-danger text-center d-none" id="nameAlert" role="alert">Name is
+          required</h5>
+        <label for="siteURL" class="my-3 fw-bold">Site URL</label>
+        <input type="text" class="form-control mb-3 w-75 m-auto" id="siteURL" placeholder="Website URL">
+        <h5 class="p-1 w-75 m-auto mb-3 fw-bold alert alert-danger text-center d-none" id="urlAlert" role="alert">Url
+          Field is required</h5>
+        <button id="siteAddButton" class="btn btn-primary" onclick="createSite()">Add Site</button>
+        <button class="btn btn-secondary" onclick="clearForm()">Clear</button>
+      </div>
+      <input type="text" onkeyup="searchSite()" id="siteSearchInput" class="form-control w-50 mx-auto my-4"
+        placeholder="search">
+      <div class="table-content m-3 mb-0 pb-0">
+        <table class="table">
+          <thead>
+            <th>Site Name</th>
+            <th>Site URL</th>
+            <th>Update</th>
+            <th>Delete</th>
+            <th>Visit</th>
+          </thead>
+          <tbody id="tableBody">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <p class="fw-bold">&copy; 2022 Bookmarker Inc.</p>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

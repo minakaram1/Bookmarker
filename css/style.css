@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 29px;
+  color: #aaa;
+  padding: 20px;
+  border-bottom: 1px solid #999;
+}
+
+.bookmark-box {
+  background-color: #eee;
+}
+
+.bookmark-box h2 {
+  font-size: 24px;
+}
+
+.bookmark-box .alert-danger {
+  --bs-alert-color: #6d0000;
+  --bs-alert-bg: #ffb2b2;
+  --bs-alert-border-color: #6d0000;
+}
+
+.table-content {
+  background-image: linear-gradient(#EEE, #FFF);
+  margin: 10px 0;
+  padding: 20px;
+}
+
+.table-content th {
+  font-size: 20px;
+}
+
+.table-content tr {
+  font-size: 18px;
+}
+
+.table>:not(caption)>*>* {
+  border: none;
+}
+
+footer p {
+  border-top: 1px solid #999;
+  font-size: 14px;
+  color: #aaa;
+  padding: 20px;
+}
